@@ -4,6 +4,7 @@
 修改prometheus配置项
 vim prom-configmap.yaml
 kubectl apply -f prom-configmap.yaml
+helm upgrade --tls monitor -f prom-settings.yaml prometheus
 
 引用：
 # Prometheus
